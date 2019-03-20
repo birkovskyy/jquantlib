@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.jquantlib.java</groupId>
+    <artifactId>jquantlib</artifactId>
+    <packaging>pom</packaging>
+    <version>0.3.0-SNAPSHOT</version>
+    <name>jquantlib</name>
+    <organization>
+        <name>org.jquantlib.java</name>
+    </organization>
+    <scm>
+        <developerConnection>scm:git:git@github.com:frgomes/jquantlib.git</developerConnection>
+        <connection>scm:git:github.com/frgomes/jquantlib.git</connection>
+        <url>http://github.com/frgomes/jquantlib</url>
+    </scm>
+    <modules>
+        <module>jquantlib</module>
+        <module>jquantlib-contrib</module>
+        <module>jquantlib-helpers</module>
+        <module>jquantlib-samples</module>
+    </modules>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.0</version>
+                    <configuration>
+                        <source>1.8</source>
+                        <target>1.8</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>
